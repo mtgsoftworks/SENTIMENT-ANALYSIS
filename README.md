@@ -2,10 +2,10 @@
 
 # Technical Documentation for Sentiment Analysis of Amazon Reviews
 #### 1. Introduction
-This documentation provides a detailed explanation of a sentiment analysis project aimed at analyzing Amazon reviews for a company named Kozmos, which focuses on home textiles and casual clothing. The goal is to label the reviews based on their sentiment and build a classification model to predict future reviews' sentiments.
+This documentation provides a detailed explanation of a sentiment analysis project aimed at analyzing Amazon reviews, which focuses on home textiles and casual clothing. The goal is to label the reviews based on their sentiment and build a classification model to predict future reviews' sentiments.
 
 #### 2. Business Problem
-Kozmos aims to enhance its products and increase sales by analyzing customer reviews on Amazon. By understanding customer sentiments and addressing complaints, the company can improve product features and customer satisfaction.
+Aims to enhance its products and increase sales by analyzing customer reviews on Amazon. By understanding customer sentiments and addressing complaints, the company can improve product features and customer satisfaction.
 
 #### 3. Dataset Description
 The dataset consists of reviews for a specific product group and includes the following variables:
@@ -19,31 +19,32 @@ The dataset is provided in an Excel file named amazon.xlsx.
 #### 4. Tasks Overview
 The project involves the following tasks:
 
-Text Preprocessing: Cleaning and preparing the text data for analysis.
-Text Visualization: Visualizing the frequency of words in the reviews.
-Sentiment Modeling: Labeling reviews based on their star ratings and building a classification model.
-Model Evaluation: Evaluating the performance of the classification model.
+##### 1-) Text Preprocessing: Cleaning and preparing the text data for analysis.
+##### 2-) Text Visualization: Visualizing the frequency of words in the reviews.
+##### 3-) Sentiment Modeling: Labeling reviews based on their star ratings and building a classification model.
+##### 4-) Model Evaluation: Evaluating the performance of the classification model.
+
 #### 5. Detailed Steps
 5.1. Import Necessary Libraries
 The following libraries are used in this project:
 
-#### pandas
-#### numpy
-#### re
-#### string
-#### sklearn
-#### matplotlib
-#### seaborn
-#### nltk
+###### pandas
+###### numpy
+###### re
+###### string
+###### sklearn
+###### matplotlib
+###### seaborn
+###### nltk
 
 #### 5.3. Text Preprocessing
 Preprocess the text data in the Review column to prepare it for analysis. The preprocessing steps include:
 
-### 1-) Converting text to lowercase.
-### 2-) Removing punctuation.
-### 3-) Removing numbers.
-### 4-) Removing stopwords.
-### 5-) Lemmatizing words.
+##### 1-) Converting text to lowercase.
+##### 2-) Removing punctuation.
+##### 3-) Removing numbers.
+##### 4-) Removing stopwords.
+##### 5-) Lemmatizing words.
 
 
 #### Text Visualization
