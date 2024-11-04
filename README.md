@@ -1,60 +1,85 @@
-# SENTIMENT-ANALYSIS
+# Sentiment Analysis for Amazon Reviews
 
-# Technical Documentation for Sentiment Analysis of Amazon Reviews
-#### 1. Introduction
-This documentation provides a detailed explanation of a sentiment analysis project aimed at analyzing Amazon reviews, which focuses on home textiles and casual clothing. The goal is to label the reviews based on their sentiment and build a classification model to predict future reviews' sentiments.
+## 1. Introduction
+This project involves sentiment analysis of Amazon reviews, focusing on home textiles and casual clothing. The objective is to classify reviews by sentiment, allowing for enhanced product insights and sentiment prediction for future reviews.
 
-#### 2. Business Problem
-Aims to enhance its products and increase sales by analyzing customer reviews on Amazon. By understanding customer sentiments and addressing complaints, the company can improve product features and customer satisfaction.
+---
 
-#### 3. Dataset Description
-The dataset consists of reviews for a specific product group and includes the following variables:
+## 2. Business Problem
+By analyzing customer reviews, the company aims to:
+- Improve product features and customer satisfaction.
+- Increase sales by addressing customer feedback and identifying areas of improvement.
 
-Review: The review content.
-Title: The title of the review, which is a short comment.
-Helpful: The number of people who found the review helpful.
-Star: The star rating given to the product.
-The dataset is provided in an Excel file named amazon.xlsx.
+---
 
-#### 4. Tasks Overview
-The project involves the following tasks:
+## 3. Dataset Description
+The dataset, provided in an Excel file (`amazon.xlsx`), contains reviews for specific product groups with the following fields:
 
-##### 1-) Text Preprocessing: Cleaning and preparing the text data for analysis.
-##### 2-) Text Visualization: Visualizing the frequency of words in the reviews.
-##### 3-) Sentiment Modeling: Labeling reviews based on their star ratings and building a classification model.
-##### 4-) Model Evaluation: Evaluating the performance of the classification model.
+- **Review**: Content of the review.
+- **Title**: Short title or comment for the review.
+- **Helpful**: Number of users who found the review helpful.
+- **Star**: Star rating given to the product.
 
-#### 5. Detailed Steps
-5.1. Import Necessary Libraries
+---
+
+## 4. Project Workflow
+The project includes the following key steps:
+
+1. **Text Preprocessing**: Prepare text data for analysis by cleaning and structuring.
+2. **Text Visualization**: Visualize word frequency in reviews to identify common themes.
+3. **Sentiment Modeling**: Label and classify reviews based on sentiment.
+4. **Model Evaluation**: Evaluate the model's performance.
+
+---
+
+## 5. Detailed Steps
+
+### 5.1. Import Necessary Libraries
 The following libraries are used in this project:
 
-###### pandas
-###### numpy
-###### re
-###### string
-###### sklearn
-###### matplotlib
-###### seaborn
-###### nltk
+- `pandas`
+- `numpy`
+- `re`
+- `string`
+- `sklearn`
+- `matplotlib`
+- `seaborn`
+- `nltk`
 
-#### 5.3. Text Preprocessing
-Preprocess the text data in the Review column to prepare it for analysis. The preprocessing steps include:
+### 5.2. Text Preprocessing
+To prepare the `Review` text data for analysis, the following preprocessing steps are applied:
 
-##### 1-) Converting text to lowercase.
-##### 2-) Removing punctuation.
-##### 3-) Removing numbers.
-##### 4-) Removing stopwords.
-##### 5-) Lemmatizing words.
+1. Convert text to lowercase.
+2. Remove punctuation.
+3. Remove numbers.
+4. Remove stopwords.
+5. Lemmatize words.
 
+---
 
-#### Text Visualization
-Calculate the frequency of words in the Processed_Review column and visualize the top 20 most common words using a bar plot.
+### 5.3. Text Visualization
+Calculate the frequency of words in the processed reviews and create a bar plot to display the top 20 most common words.
 
-#### 5.5. Sentiment Modeling
-Label the reviews as positive, neutral, or negative based on the star rating. Split the data into training and testing sets, vectorize the text data, and train a logistic regression model.
+---
 
-#### 5.6. Model Evaluation
-Evaluate the model's performance by calculating the accuracy, printing a classification report, and displaying a confusion matrix.
+### 5.4. Sentiment Modeling
+1. **Label Reviews**: Label each review as positive, neutral, or negative based on its star rating.
+2. **Data Splitting**: Divide the data into training and testing sets.
+3. **Vectorization**: Vectorize the text data.
+4. **Model Training**: Train a logistic regression model to classify sentiment.
 
-#### 6. Conclusion
-This project involves analyzing Amazon reviews for Kozmos to understand customer sentiment and improve product offerings. By preprocessing text data, visualizing word frequencies, building a sentiment classification model, and evaluating its performance, valuable insights can be derived to aid business decisions. The logistic regression model provides a robust tool for predicting the sentiment of new reviews based on the patterns learned from historical data.
+---
+
+### 5.5. Model Evaluation
+Evaluate the model’s performance by:
+
+- Calculating accuracy.
+- Printing a classification report.
+- Displaying a confusion matrix.
+
+---
+
+## 6. Conclusion
+This project delivers insights into customer sentiment on Amazon, providing actionable feedback for product improvement. By preprocessing text data, visualizing key words, building a sentiment classification model, and evaluating its performance, the company gains a valuable tool for predicting sentiment in future reviews. The logistic regression model serves as a robust predictor based on historical data patterns.
+
+--- 
